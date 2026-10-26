@@ -1,0 +1,10 @@
+{
+	"type": "origins:attribute",
+	"modifier": {
+		"attribute": "generic.armor",
+		"value": 6,
+		"operation": "addition"
+	},
+	"name": "§eCousin's Armor.",
+	"description": "After defeating the ender dragon, news got out to the end cities. The shulk gods blessed you with their shell."
+}

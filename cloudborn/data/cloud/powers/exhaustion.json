@@ -1,0 +1,10 @@
+{
+	"name": "§eExhaustion",
+	"description": "You exhaust quite fast as a cloudborn, thus requiring you to store more vapours when running.",
+    "type": "origins:modify_exhaustion",
+    "modifier": {
+        "name": "Increased exhaustion",
+        "operation": "addition",
+        "value": 0.05
+	}
+}

@@ -1,0 +1,40 @@
+{
+	"type": "origins:multiple",
+	"noeat": {
+		"type": "origins:prevent_item_use",
+		"item_condition": {
+			"type": "origins:food"
+		}
+	},
+	"bottle": {
+		"type": "origins:action_on_item_use",
+		"entity_action": {
+			"type": "origins:feed",
+			"food": 3,
+			"saturation": 1.5
+		},
+		"item_condition": {
+			"type": "origins:ingredient",
+			"ingredient": {
+				"item": "potion"
+			}
+		}
+	},
+	"inwater": {
+		"type": "origins:action_over_time",
+		"interval": 15,
+		"condition": {
+			 "type": "origins:fluid_height",
+                "fluid": "minecraft:water",
+                "comparison": ">",
+                "compare_to": 0
+		},
+		"entity_action": {
+			"type": "origins:feed",
+			"food": 3,
+			"saturation": 1.5
+		}
+	},
+	"name": "§eTrue Vapour Fill",
+	"description": "Drink or step into water to fill more hunger. §c{Credits to ApoWillow!}"
+}

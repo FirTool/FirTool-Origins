@@ -1,0 +1,38 @@
+{
+	"powers": [
+		"cloud:levitating",
+		"cloud:levitatetoggle",
+		"cloud:nimbostratus",
+		"cloud:darkshade",
+		"cloud:blowable",
+		"cloud:cloudyinstinct",
+		"cloud:slowfall",
+		"cloud:toclouds",
+		"cloud:lightspeed",
+		"cloud:heavy",
+		"cloud:evaporation",
+		"cloud:noslep",
+		"cloud:exhaustion",
+		"cloud:bar_fill_on_use",
+		"cloud:bar",
+		"cloud:thunder",
+		"cloud:vapour_filling",
+		"cloud:cloud_skin",
+		"cloud:rainhealth",
+		"cloud:noair",
+		"cloud:ender_dragon_revoke",
+		"cloud:knockback"
+	],
+	"icon": "shulker_shell",
+	"order": 26,
+	"impact": 3,
+	"name": "§eCloudborn",
+	"description": "§eBorn in the clouds, from the clouds.",
+	"upgrades": [
+		{
+			"origin": "cloud:evolved_cloudborn",
+			"condition": "end/kill_dragon",
+			"announcement": "You are now a true cloudborn. Check your origin menu."
+		}
+	]
+}

@@ -1,0 +1,12 @@
+{
+	"type": "origins:modify_damage_dealt",
+	"modifier": {
+		"operation": "addition",
+		"value": 6
+	},
+	"condition": {
+		"type": "origins:in_rain"
+	},
+	"name": "§eNimbostratus",
+	"description": "When it rains you become thicker and denser. You turn into a darker shade and feel stronger."
+}

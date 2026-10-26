@@ -1,0 +1,15 @@
+{
+	"name": "§eCloud Rising",
+	"description": "Being a descendent of the clouds, you can move up and down through the air as you feel.",
+	"type": "origins:stacking_status_effect",
+	"min_stacks": 0,
+	"max_stacks": 1,
+	"duration_per_stack": 20,
+	"effect": {
+		"effect": "levitation"
+	},
+	"condition": {
+		"type": "origins:power_active",
+		"power": "*:levitatetoggle"
+	}
+}

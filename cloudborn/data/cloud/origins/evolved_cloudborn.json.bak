@@ -1,0 +1,32 @@
+{
+	"powers": [
+		"cloud:cloud_flight",
+		"cloud:levitatinghidden",
+		"cloud:nimbostratus",
+		"cloud:darkshade",
+		"cloud:blowable",
+		"cloud:cloudyinstinct",
+		"cloud:slowfall",
+		"cloud:toclouds",
+		"cloud:lightspeed",
+		"cloud:heavy",
+		"cloud:evaporation",
+		"cloud:noslep",
+		"cloud:bar",
+		"cloud:thunder",
+		"cloud:bar_fill_on_use",
+		"cloud:vapour_fillingtwo",
+		"cloud:cloud_skin",
+		"cloud:rainhealth",
+		"cloud:knockback",
+		"cloud:levitatetoggle",
+		"cloud:noair",
+		"cloud:hardened"
+	],
+	"icon": "shulker_shell",
+	"order": 26,
+	"impact": 3,
+	"unchoosable": true,
+	"name": "§e Evolved Cloudborn",
+	"description": "§eEvolved Species of the Cloudborn."
+}

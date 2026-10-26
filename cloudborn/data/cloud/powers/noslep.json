@@ -1,0 +1,11 @@
+{
+	"name": "§eCloudy Lifestyle",
+	"description": "You are used to the cloud lifestyle.",
+	"type": "origins:prevent_sleep",
+	"block_condition": {
+		"type": "origins:height",
+		"comparison": "<",
+		"compare_to": 100
+	},
+	"message": "Can't sleep here. Sleep at y 100 or above! -Fir"
+}

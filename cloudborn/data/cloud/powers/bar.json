@@ -1,0 +1,104 @@
+{
+	"name": "§eV§fa§ep§fo§eu§fr §eS§ft§eo§fr§ea§fg§ee.",
+	"description": "You have a vapour bar. The emptier it is, the lighter you are. If the bar is too full you become heavier and move through the air slower. Stay out of water to lower the bar.",
+	"type": "origins:multiple",
+	"slowness": {
+		"condition": {
+			"type": "origins:resource",
+			"resource": "*:*_timer",
+			"comparison": ">",
+			"compare_to": 150
+		},
+		"type": "origins:conditioned_attribute",
+		"modifier": {
+			"attribute": "generic.movement_speed",
+			"operation": "multiply_base",
+			"value": -0.7
+		},
+		"tick_rate": 20
+	},
+	"timer": {
+		"type": "origins:resource",
+		"min": 0,
+		"max": 220,
+		"hud_render": {
+			"should_render": true,
+			"sprite_location": "origins:textures/gui/community/huang/resource_bar_02.png",
+			"bar_index": 16
+		}
+	},
+	"increase_in_water": {
+		"type": "origins:action_over_time",
+		"interval": 10,
+		"entity_action": {
+			"type": "origins:if_else",
+			"condition": {
+				"type": "origins:fluid_height",
+				"fluid": "minecraft:water",
+				"comparison": ">",
+				"compare_to": 0
+			},
+			"if_action": {
+				"type": "origins:change_resource",
+				"resource": "*:*_timer",
+				"change": 2
+			},
+			"else_action": {
+				"type": "origins:change_resource",
+				"resource": "*:*_timer",
+				"change": -1
+			}
+		}
+	},
+	"increase_in_rain": {
+		"condition": {
+			"type": "origins:in_rain"
+		},
+		"type": "origins:action_over_time",
+		"interval": 5,
+		"entity_action": {
+			"type": "origins:change_resource",
+			"resource": "*:*_timer",
+			"change": 2
+		}
+	},
+	"air_speed": {
+		"condition": {
+			"type": "origins:resource",
+			"resource": "*:*_timer",
+			"comparison": ">",
+			"compare_to": 160
+		},
+		"type": "origins:modify_air_speed",
+		"modifier": {
+			"operation": "multiply_total",
+			"value": -0.4
+		}
+	},
+	"air_speed_below": {
+		"condition": {
+			"type": "origins:resource",
+			"resource": "*:*_timer",
+			"comparison": "<",
+			"compare_to": 10
+		},
+		"type": "origins:modify_air_speed",
+		"modifier": {
+			"operation": "multiply_total",
+			"value": 0.4
+		}
+	},
+	"air_speed_below_two": {
+		"condition": {
+			"type": "origins:resource",
+			"resource": "*:*_timer",
+			"comparison": "<",
+			"compare_to": 70
+		},
+		"type": "origins:modify_air_speed",
+		"modifier": {
+			"operation": "multiply_base",
+			"value": 0.3
+		}
+	}
+}

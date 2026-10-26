@@ -1,0 +1,11 @@
+{
+	"type": "origins:model_color",
+	"red": 0.3,
+	"green": 0.3,
+	"blue": 0.3,
+	"alpha": 0.8,
+	"condition": {
+		"type": "origins:in_rain"
+	},
+	"hidden": true
+}

@@ -1,0 +1,15 @@
+{
+	"hidden": true,
+	"type": "origins:action_on_item_use",
+		"entity_action": {
+			"type": "origins:change_resource",
+            "resource": "*:bar_timer",
+            "change": 15
+		},
+		"item_condition": {
+			"type": "origins:ingredient",
+			"ingredient": {
+				"item": "potion"
+			}
+		}
+}

@@ -1,0 +1,6 @@
+{
+	"name": "§eCloudy",
+	"description": "You have the color and the transparency of a cloud.",
+	"type": "origins:model_color",
+	"alpha": 0.8
+}

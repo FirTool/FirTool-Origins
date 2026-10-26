@@ -1,0 +1,35 @@
+{
+	"name": "§eThunder Release",
+	"description": "Release the vapors inside of you in the form of a lightning bolt.",
+	"type": "origins:active_self",
+	"cooldown": 600,
+	"entity_action": {
+		"type": "origins:and",
+		"actions": [{
+				"type": "origins:execute_command",
+				"permission_level": 4,
+				"command": "summon minecraft:lightning_bolt ^ ^ ^6"
+			},
+			{
+				"type": "origins:execute_command",
+				"permission_level": 4,
+				"command": "summon minecraft:lightning_bolt ^ ^ ^6"
+			},
+			{
+				"type": "origins:change_resource",
+				"resource": "*:bar_timer",
+				"change": -190
+			}
+		]
+	},
+	"condition": {
+		"type": "origins:resource",
+		"resource": "*:bar_timer",
+		"comparison": ">",
+		"compare_to": 189
+	},
+	"key": {
+			"key": "key.loadToolbarActivator",
+			"continuous": false
+		}
+}

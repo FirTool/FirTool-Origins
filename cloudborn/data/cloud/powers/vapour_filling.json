@@ -1,0 +1,40 @@
+{
+	"type": "origins:multiple",
+	"noeat": {
+		"type": "origins:prevent_item_use",
+		"item_condition": {
+			"type": "origins:food"
+		}
+	},
+	"bottle": {
+		"type": "origins:action_on_item_use",
+		"entity_action": {
+			"type": "origins:feed",
+			"food": 2,
+			"saturation": 1
+		},
+		"item_condition": {
+			"type": "origins:ingredient",
+			"ingredient": {
+				"item": "potion"
+			}
+		}
+	},
+	"inwater": {
+		"type": "origins:action_over_time",
+		"interval": 15,
+		"entity_action": {
+			"type": "origins:feed",
+			"food": 1,
+			"saturation": 1
+		},
+		"condition": {
+			 "type": "origins:fluid_height",
+                "fluid": "minecraft:water",
+                "comparison": ">",
+                "compare_to": 0
+		}
+	},
+	"name": "§eVapour Fill",
+	"description": "Drink or step into water to fill your hunger bar!"
+}
