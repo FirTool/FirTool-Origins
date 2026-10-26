@@ -1,0 +1,31 @@
+{
+	"powers": [
+	"green_phoenix:fire_shoot",
+	"origins:water_vulnerability",
+	"green_phoenix:fire_walker",
+	"green_phoenix:green_skin",
+	"green_phoenix:anticold",
+	"green_phoenix:coldophobiatwo",
+	"green_phoenix:phoenix_flight",
+	"origins:fire_immunity",
+	"origins:more_exhaustion",
+	"origins:nether_spawn",
+	"green_phoenix:kiko",
+	"green_phoenix:piece",
+	"green_phoenix:lava_walker",
+	"green_phoenix:smol",
+	"green_phoenix:hot_fist",
+	"origins:flame_particles",
+	"origins:burning_wrath",
+	"origins:vegetarian",
+	"green_phoenix:packed",
+	"green_phoenix:blue",
+	"green_phoenix:snowball",
+	"green_phoenix:snow_block"
+	],
+	"icon": "minecraft:magma_block",
+	"order": 26,
+	"impact": 3,
+	"name": "Green Phoenix",
+	"description": "Reborned from their own ashes on the now green battlefield, Green Phoenix now stands proud."
+}

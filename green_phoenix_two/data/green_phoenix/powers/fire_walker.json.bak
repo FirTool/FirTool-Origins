@@ -1,0 +1,18 @@
+{
+    "type": "origins:conditioned_attribute",
+    "tick_rate": 1,
+    "modifier": {
+        "attribute": "minecraft:generic.movement_speed",
+        "operation": "multiply_base",
+        "value": 1
+    },
+    "condition": {
+        "type": "origins:on_block",
+        "block_condition": {
+            "type": "origins:block",
+            "tag": "minecraft:grass"
+        }
+    },
+    "name": "Magma Walker",
+    "description": "You move very fast on magma blocks."
+}

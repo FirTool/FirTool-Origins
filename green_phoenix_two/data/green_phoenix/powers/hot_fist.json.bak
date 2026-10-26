@@ -1,0 +1,14 @@
+{
+	"type": "origins:target_action_on_hit",
+	"entity_action": {
+		"type": "origins:set_on_fire",
+		"duration": 5
+	},
+	"cooldown": 160,
+	"hud_render": {
+		"should_render": true,
+		"bar_index": 5
+	},
+	"name": "Hot Fist",
+	"description": "You set your enemies on fire by hitting them from time to time."
+}

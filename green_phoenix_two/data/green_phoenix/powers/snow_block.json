@@ -1,0 +1,18 @@
+{
+	"hidden": true,
+	"name": "Coldophobic 2.0",
+	"description": "You take damage when holding ice related items.",
+    "type": "origins:damage_over_time",
+    "interval": 35,
+    "damage": 2,
+    "condition": {
+        "type": "origins:equipped_item",
+        "equipment_slot": "mainhand",
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "minecraft:snow_block"
+            }
+        }
+    }
+}

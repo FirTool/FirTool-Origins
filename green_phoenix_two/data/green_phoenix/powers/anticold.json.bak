@@ -1,0 +1,50 @@
+{
+	"type": "origins:damage_over_time",
+	"interval": 35,
+	"onset_delay": 1,
+	"damage": 1,
+	"damage_easy": 1,
+	"source": {
+		"name": "generic",
+		"unblockable": true,
+		"bypasses_armor": false
+	},
+	"condition": {
+		"type": "origins:biome",
+		"condition": {
+			"type": "origins:temperature",
+			"comparison": "<=",
+			"compare_to": 0.0
+		},
+		"entity_condition": {
+			"type": "origins:in_tag",
+			"inverted": true,
+			"equipment_slot": "mainhand",
+			"item_condition": {
+				"type": "origins:in_tag",
+				"conditions": [{
+						"type": "minecraft:torch"
+					},
+					{
+						"type": "minecraft:lava_bucket"
+					},
+					{
+						"type": "origins:block_in_radius",
+						"inverted": true,
+						"block_condition": {
+							"type": "origins:in_tag",
+							"tag": "origins:lava"
+						},
+						"radius": 4,
+						"shape": "cube",
+						"comparison": ">=",
+						"compare_to": 1
+					}
+
+				]
+			}
+		}
+	},
+	"name": "Coldophobic",
+	"description": "You receive damage overtime in cold biomes due to the freezing temperatures over there. The more armor you wear the warmer it'll be for you."
+}

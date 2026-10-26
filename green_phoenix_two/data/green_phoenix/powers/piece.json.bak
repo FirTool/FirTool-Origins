@@ -1,0 +1,16 @@
+{
+    "type": "origins:action_over_time",
+    "interval": 1,
+    "rising_action": {
+        "type": "origins:spawn_entity",
+        "entity_type": "minecraft:item",
+        "tag": "{Item:{id:\"minecraft:blaze_powder\",Count:4b}}"
+    },
+    "condition": {
+        "type": "origins:health",
+        "comparison": "<=",
+        "compare_to": 0
+    },
+    "name": "Yourself",
+    "description": "You drop parts of yourself when you die. (Blaze Powder)"
+}

@@ -1,0 +1,10 @@
+{
+	"type": "origins:attribute",
+	"modifier": {
+		"attribute": "minecraft:generic.max_health",
+		"operation": "addition",
+		"value": -6
+	},
+	"name": "Reborned Weakness",
+	"description": "Due to dying and being reborn, you have less health than your original old form."
+}

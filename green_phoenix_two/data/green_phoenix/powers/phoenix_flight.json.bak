@@ -1,0 +1,42 @@
+{
+	"name": "Green Wings",
+	"description": "You have a nice pair of green phoenix wings. You can fly for a little bit before needing to rest.",
+    "type": "origins:multiple",
+    "flight": {
+        "type": "origins:creative_flight",
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_timer",
+            "comparison": ">",
+            "compare_to": 1
+        }
+    },
+    "timer": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 200,
+        "hud_render": {
+            "bar_index": 4
+        }
+    },
+    "countdown": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:if_else",
+            "condition": {
+                "type": "origins:creative_flying"
+            },
+            "if_action": {
+                "type": "origins:change_resource",
+                "resource": "*:*_timer",
+                "change": -2
+            },
+            "else_action": {
+                "type": "origins:change_resource",
+                "resource": "*:*_timer",
+                "change": 2
+            }
+        },
+        "interval": 2
+    }
+}
